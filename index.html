@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <title>JS training</title>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container bg-secondary text-white w-75 p-5 m-auto fw-bolder ">
+        <h1 class="text-center text-black fw-bold ">Product List</h1>  
+        <div class="inputGroup my-2">
+            <label >Product Name</label>
+            <input type="text" class="form-control " id="ProductName" >
+        </div>
+        <div class="inputGroup my-2">
+            <label >Product Price</label>
+            <input type="number" class="form-control"  id="ProductPrice" >
+        </div>
+        <div class="inputGroup my-2">
+            <label >Product Category</label>
+            <input type="text" class="form-control" id="ProductCat" >
+        </div>
+        <div class="inputGroup my-2">
+            <label >Product Description</label>
+            <textarea type="text" class="form-control" id="ProductDes"></textarea>
+        </div>
+        <button id="addBtn" class="btn btn-dark my-2 px-5 float-end">ADD PRODUCT</button>
+        <div class="clearfix"></div>
+        <input type="text" class="form-control" placeholder="Enter Product Name" onkeyup="search(this.value)">
+        <table class="table table-striped">
+            <thead>
+                <th>Product Name</th>
+                <th>Product Price</th>
+                <th>Product Category</th>
+                <th>Product Description</th>
+                <th>DELETE</th>
+                <th>UPDATE</th>
+            </thead>
+            <tbody id="tableBody">
+            </tbody>
+        </table>
+    </div>
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
